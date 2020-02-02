@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Acerca de
+{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img src="{% static 'core/img/avatar.jpg' %}" alt="" class="img-fluid avatar">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Yickson Ramírez</h2>
+            <p>Nacido en... Control is not enlightened in wonderland, the great unknown, or hell, but everywhere.</p>
+        </div>
+    </div>
+{% endblock %}
